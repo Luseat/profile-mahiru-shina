@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand',sans-serif,Arial, Helvetica;
+
+    margin: 0;
+    padding: 0;
+    background-color: #1f242d;
+    color: whitesmoke;
+
+}
+
+h1,
+h2,
+h3 {
+  color: aqua
+}
+
+footer .copyright{
+    padding: 20px;
+    color: aqua;
+    background-color: #323946;
+
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+.footer-iconTop {
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+
+  font-weight: bolder;
+  text-decoration: none;
+
+  color: whitesmoke;
+
+  text-align: center;
+  align-items: center;
+}
+
+nav a:hover {
+  font-weight: bolder;
+  color: #323946;
+  transition: all 0.5s ease-in-out;
+
+  background-color: aqua;
+  padding: 0.7rem 1.7rem;
+  border-radius: 50px;
+  box-shadow: 0 0 1rem aqua;
+}
+
+.profile header { 
+  text-align: center;
+}
+
+.this-is-image {
+  width: 100%;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+
+  padding: 20px;
+}
+
+.atasan {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #1f242d;
+  text-align: center;
+  color: whitesmoke;
+  
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  
+  gap: 2rem;
+
+}
+
+nav li {
+  list-style-type: none;
+
+  /* display: inline;
+  text-align: center;
+  align-items: center; */
+}
+
+nav {
+  background-color: #323946;
+  padding: 5px;
+
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+header {
+  display: inline;
+}
+
+.more-profile {
+  text-align: center;
+}
+
+.left-1 .left-2 .left-3 .left-4 .left-5 {
+  text-align: left;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: aqua;
+  border-radius: 50px;
+  transition: .5s ease;
+
+  text-decoration: none;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem aqua;
+}
+
+.footer-iconTop a i {
+  color: #323946;
+  font-family: 'Quicksand';
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+
+@media screen and (max-width: 1200px) {
+  main {
+  
+    flex-flow: column nowrap;
+  
+  }
+
+  main aside {
+
+    align-self: center;
+  }
+
+  .footer-iconTop {
+    padding: 2rem 3%;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+
+  /* experimen */
+
+  .footer-iconTop {
+    flex-direction: column-reverse;
+  }
+}
+
+
